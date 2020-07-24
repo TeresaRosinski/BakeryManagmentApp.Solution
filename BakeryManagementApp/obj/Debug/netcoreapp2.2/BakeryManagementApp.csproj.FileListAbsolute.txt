@@ -22,3 +22,6 @@
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/obj/Debug/netcoreapp2.2/BakeryManagementApp.pdb
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/obj/Debug/netcoreapp2.2/BakeryManagementApp.csproj.CopyComplete
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
+/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/obj/Debug/netcoreapp2.2/Razor/Views/Vendors/Index.g.cshtml.cs
+/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/obj/Debug/netcoreapp2.2/Razor/Views/Vendors/New.g.cshtml.cs
+/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/obj/Debug/netcoreapp2.2/Razor/Views/Vendors/Show.g.cshtml.cs
