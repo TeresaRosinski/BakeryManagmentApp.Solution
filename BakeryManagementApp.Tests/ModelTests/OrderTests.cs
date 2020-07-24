@@ -34,6 +34,13 @@ namespace BakeryManagementApp.Tests
       Assert.AreEqual(description, resultDescription);
       Assert.AreEqual(price, resultPrice);
     }
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_OrderList()
+    {
+      List<Order> newOrder = new List<Order> { };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newOrder, result);
+    }
 
     
   }
