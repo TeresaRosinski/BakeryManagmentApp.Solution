@@ -67,7 +67,7 @@ namespace BakeryManagementApp.Tests
       Vendor newVendor1 = new Vendor(name1, about1);
       Vendor newVendor2 = new Vendor (name2, about2);
       Vendor result = Vendor.Find(1);
-      Assert.AreEqual(newVendor2, result);
+      Assert.AreEqual(newVendor1, result);
     }
 
     
