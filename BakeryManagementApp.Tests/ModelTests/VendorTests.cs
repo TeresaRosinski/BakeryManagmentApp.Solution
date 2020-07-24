@@ -6,13 +6,13 @@ using System;
 namespace BakeryManagementApp.Tests
 {
   [TestClass]
-  public class VendorTest //: IDisposable
+  public class VendorTest : IDisposable
   {
 
-  //   public void Dispose()
-  //   {
-  //     Vendor.ClearAll();
-  //   }
+     public void Dispose()
+     {
+       Vendor.ClearAll();
+    }
 
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
@@ -32,6 +32,16 @@ namespace BakeryManagementApp.Tests
       Assert.AreEqual(name, resultName );
       Assert.AreEqual(about, resultAbout);
 
+    }
+    [TestMethod]
+
+    public void GetId_ReturnsVendorId_Int()
+    {
+      string name = "Teresa"; 
+      string about = "Chicago, Il.";
+      Vendor newVendor = new Vendor(name, about);
+      int result = newVendor.Id;
+      Assert.AreEqual(1, result);
     }
 
     
