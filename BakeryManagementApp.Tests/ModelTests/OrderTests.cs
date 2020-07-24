@@ -69,6 +69,21 @@ namespace BakeryManagementApp.Tests
       Assert.AreEqual(1,result);
     }
 
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      string title = "Mary's Cakes";
+      string description = "5 yellow cakes";
+      string price = "$444";
+      string title2 = "Ben's Cakes";
+      string description2 = "8 yellow cakes";
+      string price2 = "$888";
+      Order newOrder = new Order(title, description, price);
+      Order newOrder2 = new Order(title2, description2, price2);
+      Order result = Order.Find(2);
+      Assert.AreEqual(newOrder2, result);
+    }
+
 
     
   }
