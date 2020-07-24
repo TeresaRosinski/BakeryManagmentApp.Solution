@@ -6,13 +6,13 @@ using System;
 namespace BakeryManagementApp.Tests
 {
   [TestClass]
-  public class OrderTest //: //IDisposable
+  public class OrderTest : IDisposable
   {
 
-    // public void Dispose()
-    // {
-    //   Order.ClearAll();
-    // }
+    public void Dispose()
+    {
+      Order.ClearAll();
+    }
 
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
@@ -53,12 +53,6 @@ namespace BakeryManagementApp.Tests
       string price2 = "$888";
       Order newOrder = new Order(title, description, price);
       Order newOrder2 = new Order(title2, description2, price2);
-      string resultTitle = newOrder.Title; 
-      string resultDescription = newOrder.Description;
-      string resultPrice = newOrder.Price; 
-      string resultTitle2 = newOrder.Title; 
-      string resultDescription2 = newOrder.Description;
-      string resultPrice2 = newOrder.Price; 
       List<Order> newList = new List<Order> { newOrder, newOrder2 };
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
