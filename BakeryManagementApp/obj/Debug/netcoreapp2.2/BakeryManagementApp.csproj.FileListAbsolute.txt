@@ -21,3 +21,4 @@
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/obj/Debug/netcoreapp2.2/BakeryManagementApp.dll
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/obj/Debug/netcoreapp2.2/BakeryManagementApp.pdb
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/obj/Debug/netcoreapp2.2/BakeryManagementApp.csproj.CopyComplete
+/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs

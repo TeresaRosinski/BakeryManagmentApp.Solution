@@ -2961,6 +2961,11 @@
   "RootNamespace": "BakeryManagementApp",
   "Documents": [
     {
+      "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
