@@ -9,9 +9,9 @@ namespace BakeryManagementApp.Tests
   public class VendorTest : IDisposable
   {
 
-     public void Dispose()
-     {
-       Vendor.ClearAll();
+    public void Dispose()
+    {
+      Vendor.ClearAll();
     }
 
     [TestMethod]
@@ -56,8 +56,18 @@ namespace BakeryManagementApp.Tests
       List<Vendor> newList = new List <Vendor> {newVendor1, newVendor2};
       List <Vendor> result = Vendor.GetAll(); 
       CollectionAssert.AreEqual(newList, result);
-
-
+    }
+    [TestMethod]
+    public void Find_ReutrnsCorrectVendor_Vendor()
+    {
+      string name1 = "Teresa"; 
+      string about1 = "Chicago, Il.";  
+      string name2 = "Ben's Bakery";
+      string about2 = "Chicago, Il."; 
+      Vendor newVendor1 = new Vendor(name1, about1);
+      Vendor newVendor2 = new Vendor (name2, about2);
+      Vendor result = Vendor.Find(1);
+      Assert.AreEqual(newVendor2, result);
     }
 
     
