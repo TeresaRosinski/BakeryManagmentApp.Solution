@@ -58,7 +58,7 @@ namespace BakeryManagementApp.Tests
       CollectionAssert.AreEqual(newList, result);
     }
     [TestMethod]
-    public void Find_ReutrnsCorrectVendor_Vendor()
+    public void Find_ReturnsCorrectVendor_Vendor()
     {
       string name1 = "Teresa"; 
       string about1 = "Chicago, Il.";  
@@ -68,6 +68,23 @@ namespace BakeryManagementApp.Tests
       Vendor newVendor2 = new Vendor (name2, about2);
       Vendor result = Vendor.Find(1);
       Assert.AreEqual(newVendor1, result);
+    }
+    
+    [TestMethod]
+    public void AddOrder_AssoicatesOrderWithVendor_OrderList()
+    {
+      string title = "Mary's Cakes";
+      string description = "5 yellow cakes";
+      string price = "$444";
+      Order newOrder = new Order (title, description, price);
+      List<Order> newList = new List<Order> { newOrder };
+      string name1 = "Teresa"; 
+      string about1 = "Chicago, Il.";
+      Vendor newVendor = new Vendor (name1, about1);
+      newVendor.AddOrder(newOrder);
+      List<Order> result = newVendor.Orders;
+      CollectionAssert.AreEqual(newList, result);
+
     }
 
     
