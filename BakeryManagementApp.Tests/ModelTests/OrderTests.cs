@@ -42,6 +42,29 @@ namespace BakeryManagementApp.Tests
       CollectionAssert.AreEqual(newOrder, result);
     }
 
+    [TestMethod]
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      string title = "Mary's Cakes";
+      string description = "5 yellow cakes";
+      string price = "$444";
+      string title2 = "Ben's Cakes";
+      string description2 = "8 yellow cakes";
+      string price2 = "$888";
+      Order newOrder = new Order(title, description, price);
+      Order newOrder2 = new Order(title2, description2, price2);
+      string resultTitle = newOrder.Title; 
+      string resultDescription = newOrder.Description;
+      string resultPrice = newOrder.Price; 
+      string resultTitle2 = newOrder.Title; 
+      string resultDescription2 = newOrder.Description;
+      string resultPrice2 = newOrder.Price; 
+      List<Order> newList = new List<Order> { newOrder, newOrder2 };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
+
+
     
   }
 }
