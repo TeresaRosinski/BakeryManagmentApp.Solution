@@ -2966,8 +2966,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Orders/Show.cshtml",
+      "TargetPath": "Views\\Orders\\Show.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Orders/New.cshtml",
+      "TargetPath": "Views\\Orders\\New.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2978,6 +2988,11 @@
     {
       "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Vendors/Index.cshtml",
       "TargetPath": "Views\\Vendors\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Orders/DeleteAll.cshtml",
+      "TargetPath": "Views\\Orders\\DeleteAll.cshtml",
       "FileKind": "mvc"
     },
     {
