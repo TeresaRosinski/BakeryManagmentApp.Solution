@@ -2969,6 +2969,21 @@
       "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Vendors/New.cshtml",
+      "TargetPath": "Views\\Vendors\\New.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Vendors/Index.cshtml",
+      "TargetPath": "Views\\Vendors\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp/Views/Vendors/Show.cshtml",
+      "TargetPath": "Views\\Vendors\\Show.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
