@@ -17,22 +17,29 @@ namespace BakeryManagementApp.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("Cake Off", "2 cakes", "$450");
+      Order newOrder = new Order("Cake Off", "2 cakes", "$450", "Cake", "2/22/2020");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
     [TestMethod]
     public void GetTitleDescriptionPrice_ReturnsTitleDescriptionPrice_String()
     {
       string title = "Mary's Cakes";
-      string description = "5 yellow cakes";
+      string quantity = "5";
       string price = "$444";
-      Order newOrder = new Order(title, description, price);
+      string typeBakedGood = "cake";
+      string dateCreated = "2/2/2020";
+      Order newOrder = new Order(title, quantity, price, typeBakedGood, dateCreated);
       string resultTitle = newOrder.Title; 
-      string resultDescription = newOrder.Description;
+      string resultQuantity = newOrder.Quantity;
       string resultPrice = newOrder.Price; 
+      string resultBakedGood = newOrder.BakedGoodType;
+      string resultDate = newOrder.Date;
       Assert.AreEqual(title, resultTitle);
-      Assert.AreEqual(description, resultDescription);
+      Assert.AreEqual(quantity, resultQuantity);
       Assert.AreEqual(price, resultPrice);
+      Assert.AreEqual(typeBakedGood, resultBakedGood);
+      Assert.AreEqual(dateCreated, resultDate);
+
     }
     [TestMethod]
     public void GetAll_ReturnsEmptyList_OrderList()
@@ -46,13 +53,17 @@ namespace BakeryManagementApp.Tests
     public void GetAll_ReturnsOrders_OrderList()
     {
       string title = "Mary's Cakes";
-      string description = "5 yellow cakes";
+      string quantity = "5";
       string price = "$444";
+      string typeBakedGood = "cake";
+      string dateCreated = "2/2/2020";
       string title2 = "Ben's Cakes";
-      string description2 = "8 yellow cakes";
+      string quantity2 = "8 yellow cakes";
       string price2 = "$888";
-      Order newOrder = new Order(title, description, price);
-      Order newOrder2 = new Order(title2, description2, price2);
+      string typeBakedGood2 = "cake2";
+      string dateCreated2 = "2/3/2020";
+      Order newOrder = new Order(title, quantity, price, typeBakedGood, dateCreated);
+      Order newOrder2 = new Order(title2, quantity2, price2, typeBakedGood2, dateCreated2);
       List<Order> newList = new List<Order> { newOrder, newOrder2 };
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
@@ -62,9 +73,11 @@ namespace BakeryManagementApp.Tests
     public void GetId_OrderInstantiateWithAnIdAndGetterReturns_Int()
     {
       string title = "Mary's Cakes";
-      string description = "5 yellow cakes";
+      string quantity = "5 yellow cakes";
       string price = "$444";
-      Order newOrder = new Order(title, description, price);
+      string typeBakedGood = "cake";
+      string dateCreated = "2/2/2020";
+      Order newOrder = new Order(title, quantity, price, typeBakedGood, dateCreated);
       int result = newOrder.Id; 
       Assert.AreEqual(1,result);
     }
@@ -73,13 +86,17 @@ namespace BakeryManagementApp.Tests
     public void Find_ReturnsCorrectOrder_Order()
     {
       string title = "Mary's Cakes";
-      string description = "5 yellow cakes";
+      string quantity = "5";
       string price = "$444";
+      string typeBakedGood = "cake";
+      string dateCreated = "2/2/2020";
       string title2 = "Ben's Cakes";
-      string description2 = "8 yellow cakes";
+      string quantity2 = "8 yellow cakes";
       string price2 = "$888";
-      Order newOrder = new Order(title, description, price);
-      Order newOrder2 = new Order(title2, description2, price2);
+      string typeBakedGood2 = "cake2";
+      string dateCreated2 = "2/3/2020";
+      Order newOrder = new Order(title, quantity, price, typeBakedGood, dateCreated);
+      Order newOrder2 = new Order(title2, quantity2, price2, typeBakedGood2, dateCreated2);
       Order result = Order.Find(2);
       Assert.AreEqual(newOrder2, result);
     }

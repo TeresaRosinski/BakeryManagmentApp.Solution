@@ -1,3 +1,5 @@
+/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.Views.dll
+/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.Views.pdb
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -6,14 +8,12 @@
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.Tests.runtimeconfig.dev.json
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.Tests.dll
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.Tests.pdb
+/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.dll
+/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.pdb
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/obj/Debug/netcoreapp2.2/BakeryManagementApp.Tests.csprojAssemblyReference.cache
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/obj/Debug/netcoreapp2.2/BakeryManagementApp.Tests.csproj.CoreCompileInputs.cache
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/obj/Debug/netcoreapp2.2/BakeryManagementApp.Tests.AssemblyInfoInputs.cache
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/obj/Debug/netcoreapp2.2/BakeryManagementApp.Tests.AssemblyInfo.cs
+/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/obj/Debug/netcoreapp2.2/BakeryManagementApp.Tests.csproj.CopyComplete
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/obj/Debug/netcoreapp2.2/BakeryManagementApp.Tests.dll
 /Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/obj/Debug/netcoreapp2.2/BakeryManagementApp.Tests.pdb
-/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.Views.dll
-/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.Views.pdb
-/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.dll
-/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/bin/Debug/netcoreapp2.2/BakeryManagementApp.pdb
-/Users/teresarosinski/Desktop/BakeryManagementApp.Solution/BakeryManagementApp.Tests/obj/Debug/netcoreapp2.2/BakeryManagementApp.Tests.csproj.CopyComplete
