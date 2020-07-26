@@ -4,16 +4,34 @@
 
 @using BakeryManagementApp.Models;
 
-<h1>Vendors</h1>
+<div class = "jumbotron text-center">
+  <h1>Vendors</h1>
+  <p class= "text-muted">Here is a list of all your current vendors.</p>
+  <p class = "text-muted">Click the name of a vendor to see their orders.</p>
+</div>
 
 @if (@Model.Count == 0)
 {
   <h3>You currently have no vendors saved</h3>
 } 
 
-@foreach (Vendor vendor in Model)
-{
-  <h3><a href='/vendors/@vendor.Id'>Name: @vendor.Name Phone: @vendor.Phone Address: @vendor.Address</a></h3>
-}
+<table class = "table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (Vendor vendor in Model)
+      {
+        <tr>
+          <td><a href='/vendors/@vendor.Id'>@vendor.Name</a></td>
+          <td>@vendor.Phone</td>
+          <td>@vendor.Address</td>
+        </tr>
+      }
+  </tbody>
+</table>
 
-<p><a href='/'>Welcome Page</a></p>

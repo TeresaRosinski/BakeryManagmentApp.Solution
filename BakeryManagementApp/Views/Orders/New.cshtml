@@ -7,27 +7,32 @@
     <legend> Add New Order For @Model.Name</legend>
       <div class = "form-group">
         <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-          <label for="orderDescription" class = "col-lg-2 control-label">Title</label>
+          
+          <label for="orderTitle" class = "col-lg-2 control-label">Title</label>
           <div class = "col-lg-10">
-        <input id="orderDescription" name="orderDescription" type="text">
+            <input id="orderTitle" name="orderTitle" type="text">
           </div>
-        <label for="BakedGoodType" class = "col-lg-2 control-label">Baked Goods Description</label>
+
+        <label for="BakedGoodType" class = "col-lg-2 control-label">Baked Goods Ordered</label>
         <div class= "col-lg-10">
           <input id="BakedGoodType" name="BakedGoodType" type="text">
         </div>
+
         <label for="orderPrice" class = "col-lg-2 control-label">Total Price</label>
         <div class = "col-lg-10">
           <input id="orderPrice" name="orderPrice" type="number"> 
         </div>
+
         <label for="orderDate" class = "col-lg-2">Order Date</label>
         <div class = "col-lg-10">
           <input id="orderDate" name="orderDate" type="date">
-      </div>
-      <br>
+        </div>
+
       <div class = "col-lg-10 col-lg-offset-2">
         <button type = "reset" class = "btn btn-default">Cancel Order</button>
         <button class = "btn btn-info" type='submit'>Add order</button>
       </div> 
+      
     </div>
   </fieldset>
 </form>
