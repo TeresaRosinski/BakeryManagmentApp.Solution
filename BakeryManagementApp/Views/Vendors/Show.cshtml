@@ -8,11 +8,9 @@
 <ul class = "list-group">
   @foreach (Order order in @Model ["orders"])
   {
-    <li class = "list-group-item"><a href= '/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
+    <li class = "list-group-item"><a href= '/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
   }
 </ul>
 
 
-<p><a href = '/vendors/@Model["vendor"].Id/orders/new'>Add New Order</a></p>
-<p><a href = '/vendors'>See All Vendors</a></p>
-<p><a href = '/'>Welcome Page</a></p>
+<button class = "btn" type='submit'><a href = '/vendors/@Model["vendor"].Id/orders/new'>Add New Order</a></button>

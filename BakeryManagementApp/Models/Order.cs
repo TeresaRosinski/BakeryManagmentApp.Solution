@@ -7,7 +7,7 @@ namespace BakeryManagementApp.Models
     public string Title {get; set;}
 
     public string BakedGoodType {get; set;}
-    public string Description {get; set;}
+    public string Quantity {get; set;}
     public string Price {get; set;}
     public string Date {get; set;}
 
@@ -15,12 +15,12 @@ namespace BakeryManagementApp.Models
 
     private static List<Order> _instances = new List <Order> { };
 
-    public Order (string title, string bakedGoodType, string description, string price, string date)
+    public Order (string title, string quantity, string price,  string bakedGoodType,  string date)
     {
       Title = title;
-      BakedGoodType = bakedGoodType; 
-      Description = description; 
+      Quantity = quantity; 
       Price = price;
+      BakedGoodType = bakedGoodType; 
       Date = date; 
       _instances.Add(this);
       Id = _instances.Count; 
