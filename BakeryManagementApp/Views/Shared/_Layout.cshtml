@@ -4,10 +4,17 @@
     <meta charset="utf-8">
     <title>Bakery Management App</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="bootstrap:lumen.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../wwwroot/css/styles.css">
-      </head>
-  <body>
+    </head>
+  <body class = "container">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="/" data-toggle="tab">Home</a></li>
+      <li><a href="/vendors" data-toggle="tab">Vendors</a></li>
+      <li><a href='/vendors/new' data-toggle="tab">Add Vendor</a></li>
+    </ul>
+  
     @RenderBody()
+    
   </body>
 </html>

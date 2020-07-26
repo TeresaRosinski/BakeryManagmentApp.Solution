@@ -2,16 +2,28 @@
   Layout = "_Layout";
 }
 
-<h1>Add a vendor:</h1>
-<p>Add a vendor here:</p>
-
-<form action="/vendors" method="post">
-  <label for="vendorName">vendor name</label>
-  <input id="vendorName" name="vendorName" type="text">
-   <label for="vendorAbout">vendor details</label>
-  <input id="vendorAbout" name="vendorAbout" type="text">
-  <button type="submit">Add</button>
+<form class = "horizontal" role = "form" action="/vendors" method="post">
+  <fieldset>
+    <legend> Add A Vendor</legend>
+      <div class = "form-group">
+        <label for="vendorName" class = "col-lg-2 control-label">Vendor Name</label>
+        <div class = "col-lg-10">
+        <input id="vendorName" name="vendorName" type="text">
+          </div>
+        <label for="vendorPhone" class = "col-lg-2 control-label">Phone Number: </label>
+        <div class= "col-lg-10">
+          <input id="vendorPhone" name="vendorPhone" type="text">
+        </div>
+        <label for="vendorAddress" class = "col-lg-2 control-label">Address: </label>
+        <div class = "col-lg-10">
+          <input id="vendorAddress" name="vendorAddress" type="text"> 
+        </div>
+      <br>
+      <div class = "col-lg-10 col-lg-offset-2">
+        <button type = "reset" class = "btn btn-default">Cancel</button>
+        <button class = "btn btn-info" type='submit'>Add Vendor</button>
+      </div> 
+    </div>
+  </fieldset>
 </form>
 
-<p><a href="/">Home</a></p>
-<p><a href="/vendors">Back to vendors.</a></p>

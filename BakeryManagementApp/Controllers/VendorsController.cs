@@ -21,9 +21,9 @@ namespace BakeryManagementApp.Controllers
       return View();
     }
     [HttpPost("/vendors")]
-    public ActionResult Create (string vendorName, string vendorAbout)
+    public ActionResult Create (string vendorName, string vendorPhone, string vendorAddress)
     {
-      Vendor newVendor = new Vendor (vendorName, vendorAbout);
+      Vendor newVendor = new Vendor (vendorName, vendorPhone, vendorAddress);
       return RedirectToAction("Index");
     }
 

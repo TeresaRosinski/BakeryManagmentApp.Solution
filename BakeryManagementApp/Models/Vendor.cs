@@ -6,16 +6,19 @@ namespace BakeryManagementApp.Models
   {
     private static List<Vendor> _instances = new List <Vendor> { };
     public string Name; 
-    public string About; 
+    public string Phone; 
+
+    public string Address; 
 
     public int Id {get; }
     
     public List<Order> Orders {get; set; }
 
-    public Vendor (string vendorName, string vendorAbout)
+    public Vendor (string vendorName, string vendorPhone, string vendorAddress)
     {
       Name = vendorName; 
-      About = vendorAbout;
+      Phone = vendorPhone;
+      Address = vendorAddress;
       _instances.Add(this);
       Id = _instances.Count;
       Orders = new List <Order> { };
